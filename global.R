@@ -5,8 +5,11 @@ library(DT)
 library(dplyr)
 library(plotly)
 
-allJobs <- read.csv("C:/Users/matta/OneDrive/DS501/Case Study 3/CS3_Matheus_Amaro/us_income.csv")
-dsJobs <- read.csv("C:/Users/matta/OneDrive/DS501/Case Study 3/CS3_Matheus_Amaro/ds_income.csv")
+allData <- "https://raw.githubusercontent.com/mattamaro/Case_Study_3/main/us_income.csv"
+allJobs <- read.csv(allData)
+
+dsData <- "https://raw.githubusercontent.com/mattamaro/Case_Study_3/main/ds_income.csv"
+dsJobs <- read.csv(dsData)
 
 cleanJobs <- allJobs %>% 
   select(State = State_ab,

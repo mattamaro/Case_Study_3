@@ -5,7 +5,6 @@ navbarPage("Case Study 3", id="mainJobs",
                selectInput('y_data','Y-axis Variable',ds_cols, selected = ~salary_in_usd)),
         h3("Scatter Plot"),
         plotlyOutput("scatter1"),
-        # plotOutput("scatter1"),
       ),
       h4("Summary of selected data"),
       verbatimTextOutput("summary")
